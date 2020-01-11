@@ -1,15 +1,18 @@
 // Navigation code here
 body {
   .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .topper();
     padding-top: 1%;
 
     nav {
-      width: 40%;
+      width: 100%;
       text-align: center;
       padding: 1%;
+
+      @media @phone {
+        width: 90%;
+        padding-bottom: 2%;
+      }
 
       a {
         text-decoration: none;
