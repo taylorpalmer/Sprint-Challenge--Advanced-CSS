@@ -1,1 +1,21 @@
 // Mixins Here
+.topper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sign(@c, @bg, @br, @w, @p, @ta, @fs) {
+  color: @c;
+  background-color: @bg;
+  border-radius: @br;
+  width: @w;
+  padding: @p;
+  text-align: @ta;
+  font-size: @fs;
+}
